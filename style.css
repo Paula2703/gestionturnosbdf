@@ -110,20 +110,34 @@ body {
     text-align: center;
 }
 
-#calendario {
+/* Asegurar que los días del mes y de la semana estén alineados */
+.fila-dias, .contenedor-dias {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 15px;
-    justify-content: center;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* Ajuste en móviles para evitar que los meses sean demasiado pequeños */
-@media screen and (max-width: 900px) {
-    #calendario {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+/* Mejorar accesibilidad en móviles */
+.dia {
+    font-size: 14px;
+    padding: 8px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .mes {
+        max-width: 300px; /* Reducir tamaño en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .fila-dias, .contenedor-dias {
+        gap: 2px; /* Espaciado más compacto */
+    }
+
+    .dia {
+        font-size: 12px; /* Reducir el tamaño de los días */
+        padding: 6px;
     }
 }
-
-@media screen and (max-width: 600px) {
-    #calendario {
-        grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
