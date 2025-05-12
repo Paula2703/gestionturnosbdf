@@ -114,4 +114,54 @@ input{
     text-align: center;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+
+.mes {
+    width: 100%; /* Para que los meses ocupen todo el ancho disponible */
+    max-width: 400px; /* Limitar el tamaño máximo */
+    display: block; /* Asegurar que se ajusten correctamente */
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Asegurar que los días del mes y de la semana estén alineados */
+.fila-dias, .contenedor-dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Mejorar accesibilidad en móviles */
+.dia {
+    font-size: 14px;
+    padding: 8px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .mes {
+        max-width: 300px; /* Reducir tamaño en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .fila-dias, .contenedor-dias {
+        gap: 2px; /* Espaciado más compacto */
+    }
+
+    .dia {
+        font-size: 12px; /* Reducir el tamaño de los días */
+        padding: 6px;
+    }
+}
+
+
 
