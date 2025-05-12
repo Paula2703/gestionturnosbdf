@@ -133,25 +133,3 @@ input{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajuste en móviles */
-@media screen and (max-width: 900px) {
-    .mes {
-        flex: 1 1 calc(50% - 10px); /* 2 meses por fila */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .mes {
-        flex: 1 1 100%; /* 1 mes por fila en móviles */
-    }
-
-    #calendario {
-        overflow-x: scroll; /* Activar scroll horizontal */
-        flex-wrap: nowrap;
-    }
-}
-
-
-
-
-
