@@ -100,7 +100,7 @@ body {
     text-align: center;
 }
 .mes {
-    width: 100%; /* Para que los meses ocupen todo el ancho disponible */
+    width: 90%; /* Para que los meses ocupen todo el ancho disponible */
     max-width: 400px; /* Limitar el tamaño máximo */
     display: block; /* Asegurar que se ajusten correctamente */
     margin: 10px auto;
@@ -124,6 +124,12 @@ body {
     font-size: 14px;
     padding: 8px;
 }
+
+#calendario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 15px;
+    justify-content: center;
 
 /* Media Queries para pantallas pequeñas */
 @media screen and (max-width: 600px) {
