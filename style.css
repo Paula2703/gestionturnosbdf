@@ -114,23 +114,6 @@ input{
     text-align: center;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 10px;
-    text-align: center;
-}
-
-.mes {
-    width: 100%; /* Para que los meses ocupen todo el ancho disponible */
-    max-width: 400px; /* Limitar el tamaño máximo */
-    display: block; /* Asegurar que se ajusten correctamente */
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
 #calendario {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
@@ -147,7 +130,7 @@ body {
 
 @media screen and (max-width: 600px) {
     #calendario {
-        grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+        grid-template-columns: repeat(2, 1fr); /* 1 columna en móviles */
     }
 }
 
